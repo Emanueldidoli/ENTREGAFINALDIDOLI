@@ -1,0 +1,266 @@
+.modo-oscuro {
+  background-color: rgb(78, 78, 138);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+/* header */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 200;
+}
+
+/* barra de navegacion */
+.navbar, footer {
+  background-color: rgb(78, 78, 138);
+  font-size: 15px;
+}
+.navbar img, footer img {
+  border-radius: 20px;
+}
+
+.nav-link {
+  color: rgb(0, 174, 255) !important;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 8em;
+}
+
+/* /*titulo de cada pagina */
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px bold;
+  padding: auto;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* /*contenedor de titulos */
+.titulos {
+  background-image: linear-gradient(90deg, rgb(0, 174, 255), rgb(78, 78, 138));
+  padding: 10px;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 12em;
+  bottom: 0;
+  border: 1px solid aliceblue;
+}
+
+/* iconos */
+.redes {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+/* pagina inicio */
+/* carrusel */
+.carrusel {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_landing {
+  background-size: cover;
+  background-position: center;
+  border: 1px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 300px !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: rgba(143, 140, 140, 0.397);
+  background-blend-mode: color;
+}
+
+.caja1 {
+  background-image: url(../multimedia/rings.jpg);
+}
+.caja1 p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.caja2 {
+  background-image: url(../multimedia/collar.jpg);
+}
+.caja2 p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.caja3 {
+  background-image: url(../multimedia/jewellery.jpg);
+}
+.caja3 p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(224, 220, 220);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* jumbotrom */
+.jumbotron {
+  text-align: center;
+  margin-bottom: 0;
+  background-color: rgb(78, 78, 138);
+}
+
+.video {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 8;
+  right: 0;
+  width: 90%;
+  height: 90%;
+  margin: 30px;
+}
+
+.tutorial {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 20px;
+}
+
+.destacados {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  border-color: #fff;
+}
+
+/* pagina productos */
+.fluid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 4px 6px -1px rgba(0, 0, 0, 0.658);
+  background-color: aliceblue;
+}
+
+.card-body {
+  border-top: solid 1px black;
+}
+
+.card-title {
+  font-size: 25px;
+  min-height: 4.5rem;
+}
+
+.card-text {
+  min-height: 1rem;
+}
+
+.img-fluid {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+
+/* Pagina contacto */
+.row {
+  margin: 10px;
+}
+
+.detalles {
+  margin-left: 60px !important;
+  margin-top: 50px;
+}
+
+.formulario p {
+  font-size: 24px;
+}
+
+.phone {
+  display: flex;
+}
+
+.mail {
+  display: flex;
+}
+
+.iconos {
+  padding-top: 10px;
+}
+.iconos i {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+.iconos p {
+  padding-top: 10px;
+}
+
+.detalles {
+  margin-left: 20px;
+}
+.detalles span {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* pagina nosotros */
+.nleft img {
+  min-height: 50vh;
+}/*# sourceMappingURL=style.css.map */

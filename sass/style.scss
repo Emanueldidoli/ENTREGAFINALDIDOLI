@@ -1,0 +1,82 @@
+
+// Variables
+$color1:rgb(78, 78, 138);
+$color2:rgb(0, 174, 255);
+$color3:rgb(224, 220, 220);
+
+.modo-oscuro{
+    background-color: $color1 ;
+}
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+/* header */
+header{
+    position: sticky;
+	top: 0px;
+    z-index: 200;
+}
+/* barra de navegacion */
+.navbar{
+    background-color: $color1; 
+    font-size: 15px;
+    img{ 
+        border-radius: 20px;
+    }
+}
+.nav-link{
+    color: $color2 !important;
+}
+
+
+body{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 8em;
+}
+/* /*titulo de cada pagina */
+h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px bold;
+    padding: auto;
+    font-size: 40px;
+    font-weight: 700;
+}
+/* /*contenedor de titulos */
+.titulos{
+    background-image: linear-gradient(90deg, $color2, $color1);
+    padding: 10px;
+}
+/* footer */
+footer{
+    @extend .navbar;
+    // position:relative;
+    position: absolute;
+    width: 100%;
+    // min-height: 20vh;
+    color:aliceblue;
+    text-align: center;
+    // padding-top: 15px;
+    margin-top: 12em;
+    bottom: 0;
+    border: 1px solid aliceblue;
+}
+/* iconos */
+.redes{
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+@import "_inicio";
+
+@import "_productos";
+
+@import "_contacto";
+
+@import "_carrito.scss";
+

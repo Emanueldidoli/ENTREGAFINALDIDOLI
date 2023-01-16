@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- description -->
+    <meta name="description" content="Descubrí las mejores joyas del mercado y compra sin moverte de tu casa.
+    Tenemos anillos de oro, plata y más. Encontra en nuestra tienda online lo que buscas.">
+    <!-- keywords -->
+    <meta name="keywords" content="joyas, anillos, collares, pulseras, aros, relojes, oro, plata">
+    <!--Google fonts-->
+    <link rel="preconectar" href="https://fonts.googleapis.com" />
+    <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto & display=swap" rel="hoja de estilo" />
+    <!-- link de font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icono de pagina -->
+    <link rel="shortcut icon" href="./multimedia/logo.png" type="image/x-icon" />
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <!-- fin link bootstrap -->
+    <link rel="stylesheet" href="sass/style.css" />
+    <!-- link de swiper -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>JOYAS HD</title>
+</head>
+
+<body class="modo-claro">
+    <!--encabezado-->
+    <header >
+        <!-- navbar inicia -->
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img src="./multimedia/logo.png" alt="JOYAS HD"
+                    style="width: 40px" />
+                    JOYAS HD</a>
+                    <button id="claro-oscuro">Cambiar Modo</button>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar links -->
+            
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/carrito.html">CARRITO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+        <!-- navbar fin -->
+    </header>
+    
+    <!--fin encabezado-->
+    <!--seccion principal-->
+    <main>
+        <!--titulo de pagina-->
+        <div class="titulos">
+            <h1>¡BIENVENIDOS!</h1>
+        </div>
+    <!-- Swiper -->
+    <div class="carrusel">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../multimedia/adult.jpg"></div>
+            <div class="swiper-slide"><img src="../multimedia/love.jpg"></div>
+            <div class="swiper-slide"><img src="../multimedia/reloj.jpg"></div>
+        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+        <div class="container-fluid ">
+            <div class="row product">
+                <!-- cards de productos -->
+                <!-- producto1 -->
+                <div class="col-sm-6  col-lg-4 container">
+                    <div class="caja1 card_landing img-fluid">
+                        <p>ANILLOS</p>
+                    </div>
+                </div>
+                <!-- producto2 -->
+                <div class="col-sm-6 col-lg-4 container">
+                    <div class="caja2 card_landing img-fluid">
+                        <p>COLLARES</p>
+                    </div>
+                </div>
+                <!-- producto3 -->
+                <div class="col-sm-6 col-lg-4 container">
+                    <div class="caja3 card_landing img-fluid">
+                        <p>PULSERAS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- productos destacados-->
+        <div class="container-fluid">
+            <h2 class="destacados">OFERTAS DESTACADAS</h2>
+            <div class="row product">
+                <!-- cards de productos -->
+                <!-- producto1 -->
+                <div class=" col-sm-6 col-md-4 col-lg-3">
+                    <div class="fluid maps">
+                        <img src="./multimedia/anillodiamante.jpg" class="img-fluid " alt="anillo ring">
+                        <div class="card-body">
+                            <h3 class="card-title">ANILLO DIAMANTE</h3>
+                            <p class="card-text">$6000</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- producto2 -->
+                <div class=" col-sm-6 col-md-4 col-lg-3">
+                    <div class="fluid maps">
+                        <div class="foto">
+                            <img src="./multimedia/jewelry.jpg" class="img-fluid " alt="collar necklace">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">COLLAR NECKLACE</h3>
+                            <p class="card-text">$7000</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- producto3 -->
+                <div class=" maps col-sm-6 col-md-4 col-lg-3">
+                    <div class="fluid maps">
+                        <img src="./multimedia/anillocompromiso.jpg" class="img-fluid " alt="anillo compromiso">
+                        <div class="card-body">
+                            <h3 class="card-title">ANILLO COMPROMISO</h3>
+                            <p class="card-text">$10000</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- producto4 -->
+                <div class=" col-sm-6 col-md-4 col-lg-3">
+                    <div class="fluid maps">
+                        <img src="./multimedia/alianzasplata.jpg" class="img-fluid " alt="alianzas plata">
+                        <div class="card-body">
+                            <h3 class="card-title">ALIANZAS PLATA 925</h3>
+                            <p class="card-text">$7500</p>
+                            <a href="#" class="btn btn-primary">Agregar al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- video -->
+        <div class="jumbotron">
+                <h4 class="tutorial">TUTORIAL.- ¿Cómo saber mi Talla de Anillo?</h4>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/_9VeUnPXg-Y" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <!-- fin seccion principal-->
+    <!--pie de pagina-->
+    <footer>
+        <p>COPYRIGHT 2022 JOYAS HD</p>
+        <p>REDES SOCIALES</p>
+        <div class="redes">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+    <!--fin pie de pagina-->
+    <!-- inicia link javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+    <!-- fin link javascript  -->
+    <!-- link de swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="modooscuro.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

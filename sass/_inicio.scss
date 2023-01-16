@@ -1,0 +1,124 @@
+/* pagina inicio */
+
+
+/* carrusel */
+    .carrusel {
+            position: relative;
+            height: 100%;
+        }
+
+        // body {
+        //     background: #eee;
+        //     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        //     font-size: 14px;
+        //     color: #000;
+        //     margin: 0;
+        //     padding: 0;
+        // }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+    .card_landing{
+        background-size: cover;
+        background-position: center;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px !important;
+        object-fit: cover;
+        background-color:rgba(143, 140, 140, 0.397);
+        background-blend-mode:color;
+    
+    }
+    @mixin cajas(){
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 25px;  
+        font-weight: 700;
+        color: $color3;
+        text-shadow: 1px 1px 3px rgb(0 0 0 / 80%);
+        
+    }
+    .caja1{
+        background-image: url(../multimedia/rings.jpg);
+        p{
+            @include cajas()
+        }
+    }
+    .caja2{
+        background-image: url(../multimedia/collar.jpg);
+        p{
+            @include cajas();
+        }
+    }
+    .caja3{
+        background-image: url(../multimedia/jewellery.jpg);
+        p{
+            @include cajas();
+        }
+    }
+/* jumbotrom */
+.jumbotron{
+    text-align: center;
+    margin-bottom: 0;
+    background-color: $color1;
+}
+.video{
+    height: 400px;
+    position:relative;
+    overflow: hidden;
+    width: 100%;
+    iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 8;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    margin: 30px;
+    }
+}
+.tutorial{
+    text-transform:uppercase;
+    font-size: 25px;
+    font-weight: 20px;
+}
+.destacados{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+    border-color: #fff;
+}
