@@ -1,8 +1,15 @@
 /* Pagina contacto */
-// .contactanos{
-//     min-height: 95vh;
-//     margin-bottom: 0 !important;
-// }
+
+// mensajes de error y exito
+
+#formulario__mensaje-exito{
+    display: none;
+}
+
+#formulario__mensaje{
+    display: none;
+}
+
 .row{
     margin: 10px ;
 }

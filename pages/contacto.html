@@ -75,24 +75,28 @@
         <div class="col-sm-6 ">
             <div class="formulario">
                 <h2>FORMULARIO DE CONTACTO:</h2>
-                <form  class="contacto" action="/action_page.php">
-                    <div class="form-group">
-                        <label for="uname">Nombre:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="nombre" name="uname" required>
+                <form id="formulario"  class="formulario contacto" >
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control form" id="nombre" placeholder="nombre" name="nombre">
                     </div>
-                    <div class="form-group"></div>
-                        <label for="uname">Apellido:</label>
-                        <input type="text" class="form-control" id="uname" placeholder="apellido" name="uname" required>
+                    <div class="formulario__grupo" id="grupo__apellido">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" class="form-control form" id="apellido" placeholder="apellido" name="apellido">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="grupo__email">
                         <label for="email">Email:</label>
-                        <input type="text" class="form-control" placeholder="email" id="email">
+                        <input type="text" class="form-control form" placeholder="email" id="email" name="email">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="grupo__textarea">
                         <label for="exampleFormControlTextarea1">Mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control form" id="textarea" rows="3" name="textarea"></textarea>
                     </div>                  
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <input type="submit" value="Enviar" class="btn btn-primary"></input>
+                    <div id="formulario__mensaje">
+                        <p><b>Error:</b>Por favor rellena el formulario</p>
+                    </div>
+                    <p id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
                 </form>
             </div>
             <div class="detalles">
@@ -138,6 +142,7 @@
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
         <script src ="/js/modooscuro.js"></script>
+        <script src="/js/contacto.js"></script>
     <!-- fin link javascript  -->
 </body>
 

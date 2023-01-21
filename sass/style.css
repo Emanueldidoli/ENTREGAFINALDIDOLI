@@ -219,6 +219,14 @@ footer {
 }
 
 /* Pagina contacto */
+#formulario__mensaje-exito {
+  display: none;
+}
+
+#formulario__mensaje {
+  display: none;
+}
+
 .row {
   margin: 10px;
 }
