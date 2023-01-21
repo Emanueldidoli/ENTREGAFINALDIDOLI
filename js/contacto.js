@@ -25,8 +25,10 @@ form.onsubmit = (event) => {
         form.reset();
 
         document.getElementById("formulario__mensaje-exito").style.display = "block";
+        document.getElementById("formulario__mensaje").style.display = "none";
     }else{
         document.getElementById("formulario__mensaje").style.display = "block";
+        document.getElementById("formulario__mensaje-exito").style.display = "none";
     }
 }
 

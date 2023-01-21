@@ -19,7 +19,14 @@ const productosHtml = (array) => {
         `
     }, "")
     document.querySelector(".carrito-contenedor").innerHTML = contenedor
+    if(contenedor.length === 0){
+        document.querySelector(".carrito-vacio").innerHTML = `
+        <h3 class"col">Carrito vacio</h3>
+        <strong>No tenés nada seleccionado.</strong>
+        `
+    }
     carritoTotal(infoDelLs)
+
 }
 // metodo fetch con funcion de mostar los productos en carrito
 fetch("https://63c45ab88067b6bef6d8004c.mockapi.io/api/v1/joyas")
@@ -60,7 +67,10 @@ const vaciarCarrito = document.querySelector("#vaciar-carrito")
 // funcion para vaciar el carrito
 vaciarCarrito.onclick = () => {
     localStorage.removeItem("carrito")
-    document.querySelector(".carrito-contenedor").innerHTML = "CARRITO VACÌO"
+    document.querySelector(".carrito-vacio").innerHTML = `
+    <h3 class"col">Carrito vacio</h3>
+    <strong>No tenés nada seleccionado.</strong>
+    `
 }
 
 // funcion para sumar el precio total del carrito
@@ -74,3 +84,15 @@ function carritoTotal() {
     })
     itemCartTotal.innerHTML = `Total $${total}`
 }
+
+const finalizarCompra = document.querySelector("#finalizar-compra")
+
+finalizarCompra.onclick = () => {
+    localStorage.removeItem("carrito")
+    document.querySelector(".carrito-vacio").innerHTML = `
+    <h3 class"col">Carrito vacio</h3>
+    <strong>No tenés nada seleccionado.</strong>
+    <h4 class="exito">Compra realizada con exito</h4>
+    `
+}
+
