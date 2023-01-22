@@ -22,6 +22,8 @@ const campos = {
     textarea: false,
 }
 
+const mensajeExito = document.querySelector("#formulario__mensaje-exito")
+const mensajeError = document.querySelector("#formulario__mensaje-error")
 
 form.onsubmit = (event) => {
     event.preventDefault();
@@ -44,11 +46,15 @@ form.onsubmit = (event) => {
     if(campos.nombre && campos.apellido && campos.email && campos.textarea){
         form.reset();
 
-        document.getElementById("formulario__mensaje-exito").style.display = "block";
-        document.getElementById("formulario__mensaje").style.display = "none";
+        mensajeExito.style.display = "block";
+        setTimeout(() => {
+            mensajeExito.style.display = "none";
+        }, 3000);
+
+        mensajeError.style.display = "none";
     }else{
-        document.getElementById("formulario__mensaje").style.display = "block";
-        document.getElementById("formulario__mensaje-exito").style.display = "none";
+        mensajeError.style.display = "block";
+        mensajeExito.style.display = "none";
     }
 
     
