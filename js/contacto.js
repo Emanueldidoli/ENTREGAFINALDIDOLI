@@ -2,6 +2,11 @@
 const form = document.querySelector("#formulario")
 const inputs = document.querySelectorAll(".form")
 
+const inputNombre = document.querySelector("#nombre")
+const inputApellido = document.querySelector("#apellido")
+const inputEmail = document.querySelector("#email")
+const inputTextarea = document.querySelector("#textarea")
+
 
 const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -21,6 +26,21 @@ const campos = {
 form.onsubmit = (event) => {
     event.preventDefault();
 
+    fetch("https://63c45ab88067b6bef6d8004c.mockapi.io/api/v1/formulariodecontacto", {
+    method: "POST",
+    body: JSON.stringify({
+        nombre: inputNombre.value,
+        apellido: inputApellido.value,
+        email: inputEmail.value,
+        textarea: inputTextarea.value,
+    }),
+    headers: {
+        "Content-Type": "application/json"
+    }
+    })
+    .then(res => res.json())
+    .then(data => (data))
+
     if(campos.nombre && campos.apellido && campos.email && campos.textarea){
         form.reset();
 
@@ -30,6 +50,9 @@ form.onsubmit = (event) => {
         document.getElementById("formulario__mensaje").style.display = "block";
         document.getElementById("formulario__mensaje-exito").style.display = "none";
     }
+
+    
+
 }
 
 
