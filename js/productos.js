@@ -16,7 +16,7 @@ const productosHtml = (array) => {
                     </div>
         `
     }, "")
-    document.querySelector(".row").innerHTML = contenedor
+    document.querySelector(".productos").innerHTML = contenedor
     
 }
 
