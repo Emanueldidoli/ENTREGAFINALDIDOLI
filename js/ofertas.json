@@ -2,7 +2,7 @@
     {
         "id": 11,
         "producto": "ANILLO DIAMANTE",
-        "img": "/multimedia/anillodiamante.jpg",
+        "img": "./multimedia/anillodiamante.jpg",
         "precio": 6000,
         "descripcion": "anillo diamante",
         "oferta": true
@@ -10,7 +10,7 @@
     {
         "id": 12,
         "producto": "COLLAR NECKLACE",
-        "img": "/multimedia/jewelry.jpg",
+        "img": "./multimedia/jewelry.jpg",
         "precio": 7000,
         "descripcion": "collar necklace",
         "oferta": true
@@ -18,7 +18,7 @@
     {
         "id": 13,
         "producto": "ANILLO COMPROMISO",
-        "img": "/multimedia/anillocompromiso.jpg",
+        "img": "./multimedia/anillocompromiso.jpg",
         "precio": 10000,
         "descripcion": "anillo compromiso",
         "oferta": true
@@ -26,7 +26,7 @@
     {
         "id": 14,
         "producto": "ALIANZAS PLATA 925",
-        "img": "/multimedia/alianzasplata.jpg",
+        "img": "./multimedia/alianzasplata.jpg",
         "precio": 7500,
         "descripcion": "alianzas plata 925",
         "oferta": true
